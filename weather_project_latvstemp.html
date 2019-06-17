@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head><!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Latitude versus Temperature</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather_visualization.css">
+</head>    
+
+<body style="background-color:grey;">
+    <!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: hsl(216, 75%, 13%); border-bottom-style: solid; border-bottom-color:aqua;">
+  <div class ="container-fluid"> 
+    <a class="navbar-brand navbar-left" href="index.html"><img src="weather_brand.png" style="padding-left 10px;" width="55px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="dropdown_ul">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; font-size: 20px;">
+                    Charts
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="weather_project_latvstemp.html">Temperature</a>
+                            <a class="dropdown-item" href="weather_project_latvswind.html">Windspeed</a>
+                            <a class="dropdown-item" href="weather_project_latvshumidity.html">Humidity</a>
+                            <a class="dropdown-item" href="weather_project_latvscloud.html">Cloudiness</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Comparison</a>
+                            <a class="dropdown-item" href="weather_project_data.html">Dataset</a>
+                        </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather_project_data.html" style="color: white; font-size: 20px;">Data<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: white; font-size: 20px;">Comparison</a>
+              </li>   
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--- Container for chart and paragraph-->
+<div class="container" id="latvs_container">
+    <div class="row" id="latvs_row">
+      <div class="leftcolumn" id="latvs_column">
+        <div class="card" id="latvs_card">
+          <h2 id="latvs_h2"><strong><i>Latitude vs. Temperature</i></strong></h2>
+          <div class="Image" id="latvs_image"></div>
+            <a id="anchor_font"><img src="weather_latvstemp.png" style="float: left; padding-bottom: 8px;">
+            Temperature is a measure of the internal energy of an object. It's one of the key drivers of climate along with volume, density, and pressure with 
+            which it shares direct and inverse relationships. For example: if temperature increases, density increases, and therefore volume and pressure also
+            increase. Therefore, air that is warm and low in moisture will rise when colliding with cooler air because warmer air is less dense than the cool air.
+            This chart demonstrates the relationship between latitude and temperature. Latitudes closer to the equator experience higher temperatures. This is due, 
+            of course, to the direct exposure to solar energy. Latitudes further from the equator present more angled surfaces to solar energy and tend to deflect 
+            a significant portion of it. The angle of the surface of the Earth relative to the sun increases as one moves towards higher latitudes, hence the gradual 
+            curvature and bell-shape of the data.
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

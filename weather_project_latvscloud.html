@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head><!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Latitude vs Cloudiness</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather_visualization.css">
+</head>    
+
+<body style="background-color: gray;">
+    <!--Navbar-->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: hsl(216, 75%, 13%); border-bottom-style: solid; border-bottom-color:aqua;">
+  <div class ="container-fluid"> 
+    <a class="navbar-brand navbar-left" href="index.html"><img src="weather_brand.png" style="padding-left 10px;" width="55px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto" id="dropdown_ul">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; font-size: 20px;">
+                    Charts
+                    </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="weather_project_latvstemp.html">Temperature</a>
+                            <a class="dropdown-item" href="weather_project_latvswind.html">Windspeed</a>
+                            <a class="dropdown-item" href="weather_project_latvshumidity.html">Humidity</a>
+                            <a class="dropdown-item" href="weather_project_latvscloud.html">Cloudiness</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="index.html">Comparison</a>
+                            <a class="dropdown-item" href="weather_project_data.html">Dataset</a>
+                        </div>
+                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="weather_project_data.html" style="color: white; font-size: 20px;">Data<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html" style="color: white; font-size: 20px;">Comparison</a>
+              </li>   
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--- Container for chart and paragraph-->
+<div class="container" id="latvs_container">
+    <div class="row" id="latvs_row">
+      <div class="leftcolumn" id="latvs_column">
+        <div class="card" id="latvs_card">
+          <h2 id="latvs_h2"><strong><i>Latitude vs. Cloudiness</i></strong></h2>
+          <div class="Image" id="latvs_image"></div>
+            <a id="anchor_font"><img src="weather_latvscloud.png" style="float: left; padding-bottom: 8px;">
+            Clouds are composed of either water droplets or ice crystals depending on the temperature. These molecules are so miniscule in weight and size, they simply remain in the air.
+            These water molecules get into the sky in the first place through the evaporation process where water vapor gasses off of water deposits into the air. Warm air rises into the 
+            sky and gradually cools, gradually losing temperature and pressure. However, air loses its ability to hold water as temperature and/or pressure decreases. Therefore, eventually
+            a threshold is reached where the water vapor condenses into water droplets or ice crystals on condensation nuclei (e.g. small particles like dust or pollen) and forms a cloud.
+            Clouds play a critical role in the interplay of weather phenomena as they reflect solar energy back into space, thus helping to regulate the temperature of the Earth.
+            This seaborn scatterplot was used to analyze the relationship between latitude and cloudiness and does seem to suggest a correlation between the two phenomenon. This appears
+            to be in line with findings by the American Meteorological Society that "there is a latitudinal variation in the cloud cover, such that around 20°N there are regions with
+            0.10 less cloudiness than the global mean. Almost the same variation (0.15 instead of 0.10) is found 20°S." (Wikipedia)
+            </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
